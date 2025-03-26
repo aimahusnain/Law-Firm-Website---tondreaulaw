@@ -29,16 +29,15 @@ export default function Home() {
             <div className="container mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
               {/* Logo */}
               <div className="flex items-center group">
-                <div className="w-10 h-10 mr-3 transition-transform duration-300 group-hover:scale-110">
+                {/* <div className="w-10 h-10 mr-3 transition-transform duration-300 group-hover:scale-110">
                   <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2L2 7L12 12L22 7L12 2Z" />
                     <path d="M2 17L12 22L22 17" />
                     <path d="M2 12L12 17L22 12" />
                   </svg>
-                </div>
+                </div> */}
                 <div className="text-white">
-                  <div className="font-semibold text-sm md:text-base leading-tight tracking-wide">Strategic</div>
-                  <div className="font-semibold text-sm md:text-base leading-tight tracking-wide">Law Group</div>
+                  <div className="font-semibold text-sm md:text-base leading-tight tracking-wide">FritzGerald Tondreau Esq.</div>
                 </div>
               </div>
 
