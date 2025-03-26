@@ -15,7 +15,7 @@ export default function Home() {
           {/* Background Image with gradient overlay */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_sceuije9fi9nmmshasla.jpg"
+              src="/heroImage.jpg"
               alt="Modern law office"
               fill
               priority
