@@ -1,3 +1,4 @@
+import { LegalDisclaimer } from "@/components/legal-disclaimer"
 import { LegalServicesSection } from "@/components/legal-services"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -247,6 +248,8 @@ export default function Home() {
 
       {/* Legal Services Section */}
       <LegalServicesSection />
+
+      <LegalDisclaimer />
     </div>
   )
 }
