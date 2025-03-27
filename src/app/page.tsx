@@ -1,65 +1,26 @@
+import { LegalServicesSection } from "@/components/legal-services";
 import { NavBar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
   ArrowRight,
-  BookOpen,
   Facebook,
-  HomeIcon,
   Linkedin,
-  Menu,
   MoreHorizontal,
   PlayIcon,
-  Scale,
-  Twitter,
-  Users,
+  Twitter
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  const services = [
-    {
-      title: "Family Law",
-      description:
-        "Navigating complex family dynamics with compassion and legal expertise. We provide comprehensive support for challenging family matters.",
-      icon: <Users className="h-8 w-8 text-blue-400" />,
-      image: "/family-law.jpg",
-      bgColor: "bg-blue-950/50",
-    },
-    {
-      title: "Divorce",
-      description:
-        "Guiding you through divorce with strategic counsel. We protect your interests and help you transition to the next chapter of your life.",
-      icon: <Scale className="h-8 w-8 text-red-400" />,
-      image: "/divorce-law.jpg",
-      bgColor: "bg-red-950/50",
-    },
-    {
-      title: "Guardianship",
-      description:
-        "Ensuring the protection and care of vulnerable individuals. We provide expert legal representation to safeguard their best interests.",
-      icon: <HomeIcon className="h-8 w-8 text-green-400" />,
-      image: "/guardianship-law.jpg",
-      bgColor: "bg-green-950/50",
-    },
-    {
-      title: "Estates",
-      description:
-        "Strategic estate planning to preserve your legacy. We help minimize tax implications and ensure smooth, dignified asset transfer.",
-      icon: <BookOpen className="h-8 w-8 text-purple-400" />,
-      image: "/estate-law.jpg",
-      bgColor: "bg-purple-950/50",
-    },
-  ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-zinc-950 to-zinc-900 dark flex flex-col">
+    <div className="min-h-screen w-full bg-black dark flex flex-col">
       {/* Hero Section Container */}
-      <div className="w-full flex items-center justify-center p-4 md:p-6 lg:p-8">
-        {/* Main container with rounded corners */}
-        <Card className="w-full max-w-7xl h-[60vh] md:h-[80vh] overflow-hidden relative border-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)] rounded-3xl bg-zinc-900">
+      <div className="w-full flex items-center justify-center p-0 sm:p-4 md:p-6 lg:p-8">
+      {/* Main container with rounded corners */}
+        <Card className="w-full max-w-7xl h-[60vh] md:h-[80vh] overflow-hidden relative border-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)] sm:rounded-3xl rounded-none bg-zinc-900">
           {/* Background Image with gradient overlay */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -77,22 +38,21 @@ export default function Home() {
 
           <div className="sm:py-4 py-8 w-full" />
 
-
           {/* Hero Content */}
           <div className="relative z-10 container mx-auto px-4 md:px-8 h-[calc(60vh-76px)] md:h-[calc(70vh-76px)]">
             {/* Mobile Layout - Only visible on small screens */}
             <div className="flex flex-col h-full justify-between md:hidden">
               <div className="pt-6">
-                <h1 className="text-white text-3xl font-sans leading-tight mb-4 tracking-tight">
+                <h1 className="text-white text-5xl font-sans leading-tight mb-4 tracking-tight">
                   <span className="block opacity-0 animate-[fadeInUp_0.6s_0.2s_forwards]">
-                  Here to fight to protect
+                    Here to fight to protect
                   </span>
                   <span className="block opacity-0 animate-[fadeInUp_0.6s_0.4s_forwards]">
-                  your legal rights.
+                    your legal rights.
                   </span>
                 </h1>
-                <p className="text-white/80 text-xs mb-6 max-w-xl leading-relaxed opacity-0 animate-[fadeInUp_0.6s_0.6s_forwards]">
-                Trust us for affordable, competent, and compassionate help
+                <p className="text-white/80 text-md mb-6 max-w-xl leading-relaxed opacity-0 animate-[fadeInUp_0.6s_0.6s_forwards]">
+                  Trust us for affordable, competent, and compassionate help
                   with family law, divorce, guardianship, and estates. Contact
                   the law office of FritzGerald Tondreau Esq. today.
                 </p>
@@ -100,7 +60,7 @@ export default function Home() {
                   <Button
                     variant="default"
                     size="default"
-                    className="w-full sm:w-auto"
+                    className="w-fit px-4 sm:w-auto"
                   >
                     Get a Consultation
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -193,11 +153,10 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-
-              {/* Bottom Row */}
             </div>
 
-            <div className="relative hidden md:block w-full py-6 md:py-8 opacity-0 animate-[fadeIn_1s_1.2s_forwards] items-center justify-center flex-col bottom-8">
+            {/* Bottom Row */}
+            <div className="relative hidden md:block w-full py-6 md:py-8 opacity-0 animate-[fadeIn_1s_1.2s_forwards] items-center justify-center flex-col bottom-5">
               {/* Social Media Icons */}
               <div className="absolute left-0 bottom-0 flex space-x-4">
                 {[
@@ -287,62 +246,7 @@ export default function Home() {
       </div>
 
       {/* Legal Services Section */}
-      <section className="w-full bg-black py-12 md:py-16 lg:py-24">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 tracking-tight">
-              Our Specialized Legal Services
-            </h2>
-            <p className="text-zinc-400 text-base md:text-lg max-w-3xl mx-auto">
-              Comprehensive legal solutions tailored to your unique needs. Our
-              experienced attorneys provide strategic guidance across critical
-              legal domains.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="
-                bg-zinc-800 
-                border-zinc-700 
-                p-4 md:p-6 
-                relative 
-                group 
-                overflow-hidden 
-                transition-all 
-                duration-300 
-                hover:shadow-xl 
-                hover:border-zinc-600
-              "
-              >
-                <div className="absolute top-0 left-0 w-full h-1 bg-white/10 group-hover:bg-white/20 transition-all duration-300"></div>
-
-                <div className="flex flex-col h-full">
-                  <div className="mb-3 md:mb-4 flex items-center space-x-3 md:space-x-4">
-                    <div className="bg-zinc-700 p-2 rounded-full">
-                      {service.icon}
-                    </div>
-                    <h3 className="text-white text-lg md:text-xl font-semibold">
-                      {service.title}
-                    </h3>
-                  </div>
-                  <p className="text-zinc-400 text-sm md:text-base mb-4 md:mb-6 flex-grow">
-                    {service.description}
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="mt-auto border-zinc-600 text-white hover:bg-white/10"
-                  >
-                    Learn More
-                  </Button>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+<LegalServicesSection />
     </div>
   );
 }

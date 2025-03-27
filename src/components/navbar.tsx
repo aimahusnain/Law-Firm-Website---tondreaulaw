@@ -28,13 +28,13 @@ export function NavBar() {
   return (
     <nav 
       className={`
-        fixed top-5 shadow-2xl py-1 left-5 right-5 max-w-full z-50 transition-all duration-300
+        fixed top-5 py-1 sm:left-14 sm:right-14 left-2 right-2 max-w-full z-50 transition-all duration-300
         ${isScrolled 
           ? 'bg-black/70 rounded-full backdrop-blur-md shadow-lg' 
           : 'bg-transparent top-10'}
       `}
     >
-      <div className="container mx-auto px-10 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-5 sm:px-10 py-4 flex justify-between items-center">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -53,7 +53,7 @@ export function NavBar() {
               duration-300
             "
           >
-            FritzLaw
+            FritzGerald Tondreau Esq.
           </Link>
         </motion.div>
 
@@ -75,12 +75,12 @@ export function NavBar() {
                   relative 
                   text-white/80 
                   text-sm 
-                  uppercase 
-                  tracking-wider
+                  uppercase
                   group 
                   hover:text-white
                   transition-colors 
                   duration-300
+                  tracking-widest
                 "
               >
                 {link.name}
