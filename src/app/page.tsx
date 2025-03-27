@@ -1,5 +1,4 @@
 import { LegalServicesSection } from "@/components/legal-services";
-import { NavBar } from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -34,7 +33,7 @@ export default function Home() {
           </div>
 
           {/* Header/Navigation */}
-          <NavBar />
+          {/* <NavBar /> */}
 
           <div className="sm:py-4 py-8 w-full" />
 

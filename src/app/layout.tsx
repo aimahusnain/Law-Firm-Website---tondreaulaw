@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
+import NavBar from "@/components/navbar";
 
 const helvetica = localFont({
   src: [
@@ -110,7 +112,9 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem={false}
         >
+          <NavBar />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
