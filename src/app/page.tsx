@@ -20,7 +20,7 @@ export default function Home() {
       {/* Hero Section Container */}
       <div className="w-full flex items-center justify-center p-0 sm:p-4 md:p-6 lg:p-8">
       {/* Main container with rounded corners */}
-        <Card className="w-full max-w-7xl h-[60vh] md:h-[80vh] overflow-hidden relative border-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)] sm:rounded-3xl rounded-none bg-zinc-900">
+        <Card className="w-full max-w-7xl h-[80vh] md:h-[80vh] overflow-hidden relative border-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)] sm:rounded-3xl rounded-none bg-zinc-900">
           {/* Background Image with gradient overlay */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -39,11 +39,11 @@ export default function Home() {
           <div className="sm:py-4 py-8 w-full" />
 
           {/* Hero Content */}
-          <div className="relative z-10 container mx-auto px-4 md:px-8 h-[calc(60vh-76px)] md:h-[calc(70vh-76px)]">
+          <div className="relative z-10 container mx-auto px-4 md:px-8 h-[calc(80vh-76px)] md:h-[calc(70vh-76px)]">
             {/* Mobile Layout - Only visible on small screens */}
             <div className="flex flex-col h-full justify-between md:hidden">
               <div className="pt-6">
-                <h1 className="text-white text-5xl font-sans leading-tight mb-4 tracking-tight">
+                <h1 className="text-white text-3xl font-sans leading-tight mb-4 tracking-tight">
                   <span className="block opacity-0 animate-[fadeInUp_0.6s_0.2s_forwards]">
                     Here to fight to protect
                   </span>
@@ -51,12 +51,12 @@ export default function Home() {
                     your legal rights.
                   </span>
                 </h1>
-                <p className="text-white/80 text-md mb-6 max-w-xl leading-relaxed opacity-0 animate-[fadeInUp_0.6s_0.6s_forwards]">
+                <p className="text-white/80 text-sm mb-6 max-w-xl leading-relaxed opacity-0 animate-[fadeInUp_0.6s_0.6s_forwards]">
                   Trust us for affordable, competent, and compassionate help
                   with family law, divorce, guardianship, and estates. Contact
                   the law office of FritzGerald Tondreau Esq. today.
                 </p>
-                <div className="opacity-0 animate-[fadeInUp_0.6s_0.8s_forwards]">
+                <div className="opacity-0 animate-[fadeInUp_0.6s_0.8s_forwards] mb-10">
                   <Button
                     variant="default"
                     size="default"

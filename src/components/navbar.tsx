@@ -44,7 +44,7 @@ export function NavBar() {
           <Link 
             href="/" 
             className="
-              text-2xl font-bold 
+              sm:text-2xl text-md font-bold 
               bg-clip-text text-transparent 
               bg-gradient-to-r from-white to-white/70
               tracking-wider
