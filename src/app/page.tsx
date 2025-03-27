@@ -11,7 +11,7 @@ export default function Home() {
       {/* Hero Section Container */}
       <div className="w-full flex items-center justify-center p-0 sm:p-4 md:p-6 lg:p-8">
         {/* Main container with rounded corners */}
-        <Card className="w-full max-w-7xl h-[90vh] sm:h-[85vh] md:h-[80vh] overflow-hidden relative border-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)] sm:rounded-3xl rounded-none bg-zinc-900">
+        <Card className="w-full max-w-7xl h-[580px] sm:h-[700px] md:h-[750px] overflow-hidden relative border-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)] sm:rounded-3xl rounded-none bg-zinc-900">
           {/* Background Image with gradient overlay */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="sm:py-4 py-8 w-full" />
 
           {/* Hero Content */}
-          <div className="relative z-10 container mx-auto px-4 md:px-8 h-[calc(90vh-76px)] sm:h-[calc(85vh-76px)] md:h-[calc(80vh-76px)] flex flex-col justify-between">
+          <div className="relative z-10 container mx-auto px-4 md:px-8 h-[calc(600px-76px)] sm:h-[calc(650px-76px)] md:h-[calc(700px-76px)] flex flex-col justify-between">
             {/* Mobile & Tablet Layout */}
             <div className="flex flex-col h-full justify-between md:hidden">
               <div className="pt-6">
@@ -139,7 +139,7 @@ export default function Home() {
             <div className="relative h-full pt-6 md:pt-12 lg:pt-16 hidden md:block">
               {/* Left Column - Text Content with animations */}
               <div className="w-full flex flex-col justify-center">
-                <h1 className="text-white text-4xl lg:text-5xl xl:text-8xl 2xl:text-8xl font-sans leading-tight mb-6 md:mb-8 tracking-tight">
+                <h1 className="text-white text-4xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-sans leading-tight mb-6 md:mb-8 tracking-tight">
                   <span className="block opacity-0 animate-[fadeInUp_0.6s_0.2s_forwards]">
                     Here to fight to protect
                   </span>
