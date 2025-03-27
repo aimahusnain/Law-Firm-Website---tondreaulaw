@@ -5,44 +5,47 @@ export const LegalServicesSection = () => {
       {
         title: "Family Law",
         description: "Compassionate legal guidance through complex family challenges.",
-        icon: <Users className="h-8 w-8 text-neutral-300" />,
+        icon: <Users className="h-6 sm:h-8 w-6 sm:w-8 text-neutral-300" />,
       },
       {
         title: "Divorce",
         description: "Strategic counsel for navigating life's most difficult transitions.",
-        icon: <Scale className="h-8 w-8 text-neutral-300" />,
+        icon: <Scale className="h-6 sm:h-8 w-6 sm:w-8 text-neutral-300" />,
       },
       {
         title: "Guardianship",
         description: "Protecting vulnerable individuals with expert legal representation.",
-        icon: <HomeIcon className="h-8 w-8 text-neutral-300" />,
+        icon: <HomeIcon className="h-6 sm:h-8 w-6 sm:w-8 text-neutral-300" />,
       },
       {
         title: "Estates",
         description: "Comprehensive planning to preserve and protect your legacy.",
-        icon: <BookOpen className="h-8 w-8 text-neutral-300" />,
+        icon: <BookOpen className="h-6 sm:h-8 w-6 sm:w-8 text-neutral-300" />,
       }
     ];
   
     return (
-      <section className="w-full bg-black py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-8">
+      <section className="w-full bg-black py-12 sm:py-16 md:py-24">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
           {/* Header */}
-          <div className="text-center mb-16 max-w-4xl mx-auto">
+          <div className="text-center mb-12 sm:mb-16 max-w-4xl mx-auto">
             <h2 className="
-              text-3xl 
+              text-2xl 
+              sm:text-3xl 
               md:text-5xl 
               lg:text-6xl 
               font-light 
               text-neutral-100 
-              mb-6 
+              mb-4 
+              sm:mb-6 
               tracking-tight
             ">
               Precision Legal Solutions
             </h2>
             <p className="
               text-neutral-400 
-              text-base 
+              text-sm 
+              sm:text-base 
               md:text-lg 
               max-w-3xl 
               mx-auto 
@@ -54,15 +57,13 @@ export const LegalServicesSection = () => {
             </p>
           </div>
   
-          {/* Mobile-Friendly Grid Keeping Desktop Layout */}
-          <div className="grid grid-cols-12 gap-8">
+          {/* Responsive Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {services.map((service, index) => (
               <div 
                 key={index} 
                 className={`
-                  col-span-12 
-                  md:col-span-6 
-                  lg:col-span-3 
+                  w-full 
                   group 
                   relative 
                   overflow-hidden 
@@ -75,19 +76,21 @@ export const LegalServicesSection = () => {
                   hover:border-neutral-700 
                   hover:shadow-xl
                   transform 
-                  ${index % 2 === 0 ? 'md:translate-y-8' : 'md:-translate-y-8'}
-                  ${index === 0 || index === 3 ? 'sm:col-start-2 lg:col-start-auto' : ''}
+                  ${index % 2 === 0 ? 'lg:translate-y-8' : 'lg:-translate-y-8'}
                 `}
               >
-                <div className="p-6 md:p-8 relative z-10 h-full flex flex-col">
+                <div className="p-5 sm:p-6 md:p-8 relative z-10 h-full flex flex-col">
                   {/* Subtle Icon Container */}
                   <div className={`
-                    w-14 
+                    w-12 
+                    sm:w-14 
                     md:w-16 
-                    h-14 
+                    h-12 
+                    sm:h-14 
                     md:h-16 
                     rounded-full 
-                    mb-4 
+                    mb-3 
+                    sm:mb-4 
                     md:mb-6 
                     flex 
                     items-center 
@@ -100,11 +103,13 @@ export const LegalServicesSection = () => {
                   </div>
   
                   <h3 className="
-                    text-xl 
+                    text-lg 
+                    sm:text-xl 
                     md:text-2xl 
                     font-light 
                     text-neutral-200
-                    mb-3 
+                    mb-2 
+                    sm:mb-3 
                     md:mb-4 
                     transition-colors
                   ">
@@ -112,9 +117,11 @@ export const LegalServicesSection = () => {
                   </h3>
                   <p className="
                     text-neutral-400 
-                    text-sm 
+                    text-xs 
+                    sm:text-sm 
                     md:text-base 
-                    mb-4 
+                    mb-3 
+                    sm:mb-4 
                     md:mb-6 
                     flex-grow 
                     leading-relaxed
@@ -133,16 +140,20 @@ export const LegalServicesSection = () => {
                         items-center 
                         hover:text-white
                         transition-colors
-                        text-sm 
+                        text-xs 
+                        sm:text-sm 
                         md:text-base
                       "
                     >
                       Learn More
                       <ArrowRight 
                         className="
-                          ml-2 
-                          h-4 
-                          w-4 
+                          ml-1 
+                          sm:ml-2 
+                          h-3 
+                          w-3 
+                          sm:h-4 
+                          sm:w-4 
                           transform 
                           transition-transform 
                           group-hover/link:translate-x-1
